@@ -6,40 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
     <title>AESOP</title>
 </head>
-
 <body>
-    <div class="block">
-        <div class="header">
-            <h1>Book your appointment below</h1>
-        </div>
-        <div class="container">
-            <form action="">
-                <div class="name">
-                    <label for="name">Full Name:</label>
-                    <input type="text" class="name" id="name">
-                </div>
-                <div class="email">
-                    <label for="name">Email:</label>
-                    <input type="text" class="email" id="email">
-                </div>
-                <div class="input-date">
-                    <label for="date">Date:</label>
-                    <input type="date" class="date" id="date">
-                </div>
-                <div class="input-time">
-                    <label for="name">Time:</label>
-                    <input type="time" class="time" id="time">
-                </div>
-                <div class="button">
-                    <input type="button" class= "btn" onClick="processData('name','email', 'date', 'time')" value="Submit" />
-                </div>
-        </div>
-        </form>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<div class="booking-bg"></div>
+						<form>
+							<div class="form-header">
+								<h2>Book your appointment</h2>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Date</span>
+										<input type="date" class="form-control" id="date" required>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Time</span>
+										<input class="form-control" type="time" id="time" required>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<span class="form-label">Name</span>
+								<input class="form-control" type="name" id="name" placeholder="Enter your name">
+							</div>
+							<div class="form-group">
+								<span class="form-label">Email</span>
+								<input class="form-control" type="email" id= "email" placeholder="Enter your email">
+							</div>
+							<div class="form-btn">
+                                    <input type="button" class="submit-btn" onClick="processData('name','email', 'date', 'time')" value="Book Now" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
     </div>
-
     <script type="text/javascript" src="script.js"></script>
 </body>
 
