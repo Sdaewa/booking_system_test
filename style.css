@@ -1,0 +1,45 @@
+.block{
+    font-family: 'Rubik', sans-serif;
+    display: grid;
+    justify-content: center;
+    width: 100vw;
+    box-sizing: border-box;
+}
+h1 {
+text-align: center;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+    border: solid 1px black;
+    width: 800px;
+    grid-template-areas: "name"
+                         "email"
+                         "input-date input-time"
+                         "btn";
+
+}
+.name {
+    font-family: 'Rubik', sans-serif;
+    grid-area: name;
+
+}
+.email{
+    font-family: 'Rubik', sans-serif;
+    grid-area: email;
+}
+.input-date {
+    font-family: 'Rubik', sans-serif;
+    grid-area: input-date;
+}
+.input-time {
+    font-family: 'Rubik', sans-serif;
+    grid-area: input-time;
+}
+.btn {
+    background-color: blue;
+    padding: 8px;
+    border-radius: 8px;
+    grid-area: btn;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <title>AESOP</title>
+</head>
+
+<body>
+    <div class="block">
+        <div class="header">
+            <h1>Book your appointment below</h1>
+        </div>
+        <div class="container">
+            <form action="">
+                <div class="name">
+                    <label for="name">Full Name:</label>
+                    <input type="text" class="name" id="name">
+                </div>
+                <div class="email">
+                    <label for="name">Email:</label>
+                    <input type="text" class="email" id="email">
+                </div>
+                <div class="input-date">
+                    <label for="date">Date:</label>
+                    <input type="date" class="date" id="date">
+                </div>
+                <div class="input-time">
+                    <label for="name">Time:</label>
+                    <input type="time" class="time" id="time">
+                </div>
+                <div class="button">
+                    <input type="button" class= "btn" onClick="processData('name','email', 'date', 'time')" value="Submit" />
+                </div>
+        </div>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
