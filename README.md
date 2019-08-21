@@ -1,3 +1,6 @@
 # Booking system test AESOP
 
-http://localhost:5500/main.html
+## Instructions
+Clone or download repo
+
+Go to: http://localhost:5500/main.html
